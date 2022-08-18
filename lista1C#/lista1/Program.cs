@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace lista1
 {
@@ -46,6 +46,24 @@ namespace lista1
                 case 3:
                     break;
                 case 4:
+                    Console.WriteLine("$$$$$$$$$$$$$$$$ Bem-vindo ao Fibonacci printer $$$$$$$$$$$$$$$$");
+                    Console.WriteLine("Informe um valor, o programa imprimirá a sequência de fibonacci até o número informado:");
+                    string limit = Console.ReadLine();
+                    int ultimo = 1;
+                    int penultimo = 0;
+                    Console.WriteLine("----------------------------------------------------------------------------");
+                    Console.WriteLine(penultimo);
+                    Console.WriteLine(ultimo);
+                    for(int i =2; i< Double.Parse(limit); i++){
+                        int proximo = ultimo + penultimo;
+                        if(proximo <= Double.Parse(limit)){
+                            Console.WriteLine(proximo);
+                            penultimo = ultimo;
+                            ultimo = proximo;
+                        }
+                       
+                    }
+
                     break;
                 case 5:
                     break;                

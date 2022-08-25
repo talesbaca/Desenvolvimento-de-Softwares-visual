@@ -1,0 +1,27 @@
+using System.IO
+
+
+Classe String:
+{
+.Split(arg char)
+.Trim() -> tira espaços 
+}
+
+
+Classe File:
+{
+.ReadAllText('nomeArquivo') -> lê um arquivo text
+ output: "Ex=texto\nEx2=texto2\nEx3=texto3"
+}
+
+foreach em C# 
+  string data = File.ReadAllText("ex.txt")
+  string linhas = data.Split("\n");
+  foreach(string linha in linhas{
+	string[] content = coisa.split("=")
+	Console.Writeline(coisa);
+  }
+
+
+Array de objetos:
+  Pessoa[] ps = new Pessoa[n];
